@@ -18,9 +18,9 @@ Play will start up on the HTTP port at http://localhost:9000/.   You don't need 
 
 ### Usage
 
-If you call the same URL from the command line, you’ll see JSON. Using httpie, we can execute the command:
+Check out ReceiptController.scala and post your image as multi-part form POST with parameter name "img".
 
 ```
-http --verbose http://localhost:9000/receipt/upload
+curl -X POST http://localhost:9000/receipt/upload
 ```
 

@@ -1,15 +1,15 @@
 package receipt
 
-class ReceiptController /*@Inject()(components: ControllerComponents)(implicit ec: ExecutionContext)
-  extends AbstractController(components)*/ {
+class ReceiptController @Inject()(components: ControllerComponents)(implicit ec: ExecutionContext)
+  extends AbstractController(components) {
 
-  /*val clientService = new ClientReceiptService
+  val clientService = new ClientReceiptService
   val receiptService = new ReceiptService
   val TMP_RECEIPT_DIR = "tmp/receipts/"
 
-  (new File(TMP_RECEIPT_DIR)).mkdir()*/
+  (new File(TMP_RECEIPT_DIR)).mkdir()
 
-  /*def browse = Action { implicit request =>
+  def browse = Action { implicit request =>
     Ok(views.html.browse())
   }
 
@@ -28,5 +28,5 @@ class ReceiptController /*@Inject()(components: ControllerComponents)(implicit e
       Redirect("/").flashing(
         "error" -> "Missing file")
     }
-  }*/
+  }
 }
