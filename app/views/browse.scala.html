@@ -1,0 +1,21 @@
+@()
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Receipt Upload</title>
+</head>
+
+<body>
+<h1>Upload a Receipt for tracking</h1>
+
+<p>
+<form action="/receipt/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="img" value="Browse"/>
+    <input type="submit" value="Upload">
+</form>
+</p>
+
+</body>
+</html>
